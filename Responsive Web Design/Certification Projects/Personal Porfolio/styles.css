@@ -147,47 +147,82 @@ font-size: 25px;
   
   min-height: 100vh; /* Ensures full view height */
   display: flex;
-
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-#projects > .box-container{
- 
-    display: grid;
-    max-width: 1600px;
-    grid-gap: 25px;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-template-rows: 400px 400px;
-    grid-auto-rows: 400px;
-    padding: 50px 20px; /* Ensure enough space for sticky header */
 
-}
 
-.box-container > section {
+.box-container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
-  color: #ffeead;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
 }
 
-.box-container > section:nth-child(1n) {
-  background-color: #96ceb4;	
+.box-container img {
+  width: 100%;
+  max-width: 400px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.box-container > section:nth-child(3n) {
-  background-color: #88d8b0;
+.box-container::after {
+  content: "";
+  width: 350px;
 }
 
-.box-container > section:nth-child(2n) {
-  background-color: #ff6f69;
+
+
+/* CSS */
+.button-7 {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
 }
 
-.box-container > section:nth-child(4n) {
-  background-color: #ffcc5c;
+.button-7:hover,
+.button-7:focus {
+  background-color: #07c;
 }
+
+.button-7:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-7:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
 
 
 
