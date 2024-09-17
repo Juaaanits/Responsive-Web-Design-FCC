@@ -85,15 +85,15 @@ header {
 background-color: #111;
 margin: 0;
 padding: 0;
-overflow: hidden;
+
 padding: 10px ;
-
-
-}
-
-#navbar ul {
 position: sticky;
+top: 0;
+width: 100%;
+z-index: 1000;
+
 }
+
 
 #navbar li a {
 text-decoration: none;
